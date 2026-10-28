@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:get_it/get_it.dart';
-import 'package:marvel_comics/constants/env_constants.dart';
+import 'package:super_heroes/constants/env_constants.dart';
 
 GetIt serviceLocator = GetIt.instance;
 
