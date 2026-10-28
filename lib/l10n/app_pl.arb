@@ -1,0 +1,11 @@
+{
+  "@@locale": "pl",
+  "appTitle": "Super Heroes App",
+  "home": "Strona główna",
+  "search": "Szukaj",
+  "publishedBy": "wydawca: {publisher}",
+  "charactersLoadingError": "Nie udało się wczytać bohaterów",
+  "charactersEmpty": "Nie znaleziono bohaterów",
+  "retry": "Spróbuj ponownie",
+  "loadMoreRetry": "Wczytaj więcej"
+}
