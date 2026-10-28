@@ -1,2 +1,2 @@
-# marvel_comics
-Flutter project that lists fifferent marvel comics
+# super_heroes
+Flutter project about superheroes

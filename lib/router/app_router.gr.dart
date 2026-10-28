@@ -11,7 +11,7 @@
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 
 import 'package:auto_route/auto_route.dart' as _i2;
-import 'package:marvel_comics/view/pages/landing/landing_page.dart' as _i1;
+import 'package:super_heroes/view/pages/landing/landing_page.dart' as _i1;
 
 /// generated route for
 /// [_i1.LandingPage]

@@ -1,23 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:marvel_comics/router/app_router.dart';
-import 'package:marvel_comics/service_locator.dart';
+import 'package:super_heroes/router/app_router.dart';
+import 'package:super_heroes/service_locator.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   setupDependencies();
   SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
-  runApp(const MarvelComicsApp());
+  runApp(const SuperHeroesApp());
 }
 
-class MarvelComicsApp extends StatefulWidget {
-  const MarvelComicsApp({super.key});
+class SuperHeroesApp extends StatefulWidget {
+  const SuperHeroesApp({super.key});
 
   @override
-  State<MarvelComicsApp> createState() => _MarvelComicsAppState();
+  State<SuperHeroesApp> createState() => _SuperHeroesAppState();
 }
 
-class _MarvelComicsAppState extends State<MarvelComicsApp> {
+class _SuperHeroesAppState extends State<SuperHeroesApp> {
   final AppRouter _appRouter = AppRouter();
 
   @override
