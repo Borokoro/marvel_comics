@@ -1,0 +1,18 @@
+{
+  "@@locale": "en",
+  "appTitle": "Super Heroes App",
+  "home": "Home",
+  "search": "Search",
+  "publishedBy": "published by {publisher}",
+  "@publishedBy": {
+    "placeholders": {
+      "publisher": {
+        "type": "String"
+      }
+    }
+  },
+  "charactersLoadingError": "Couldn't load the heroes",
+  "charactersEmpty": "No heroes found",
+  "retry": "Try again",
+  "loadMoreRetry": "Load more"
+}
