@@ -34,4 +34,21 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get loadMoreRetry => 'Wczytaj więcej';
+
+  @override
+  String get searchHint => 'Szukaj superbohatera';
+
+  @override
+  String get cancel => 'Anuluj';
+
+  @override
+  String get searchStartTyping =>
+      'Zacznij pisać, aby znaleźć konkretnego superbohatera.';
+
+  @override
+  String get searchNoResults =>
+      'W naszej bibliotece nie ma superbohatera o takiej nazwie. Sprawdź pisownię i spróbuj ponownie.';
+
+  @override
+  String get searchError => 'Nie udało się wyszukać bohaterów';
 }

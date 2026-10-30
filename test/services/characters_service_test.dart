@@ -37,6 +37,19 @@ void main() {
     expect(response.data.single.id, CharacterJsonFixture.id);
   });
 
+  test("filters characters by name", () async {
+    adapter.responseBody = {"status_code": 1, "number_of_total_results": 0, "results": []};
+
+    await service.getCharacters(page: 1, name: "ant");
+
+    expect(adapter.lastRequest.queryParameters, {
+      "limit": CharactersService.pageSize,
+      "offset": 0,
+      "field_list": "id,name,image,publisher,deck",
+      "filter": "name:ant",
+    });
+  });
+
   test("has no next page when the last results are loaded", () async {
     adapter.responseBody = {
       "status_code": 1,

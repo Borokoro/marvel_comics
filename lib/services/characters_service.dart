@@ -6,6 +6,7 @@ import 'package:super_heroes/types/models/characters_response.dart';
 class CharactersService {
   static const String _charactersPath = "/characters/";
   static const String _fieldList = "id,name,image,publisher,deck";
+  static const String _nameFilterPrefix = "name:";
 
   static const int pageSize = 20;
 
@@ -13,11 +14,16 @@ class CharactersService {
 
   CharactersService({required this.dio});
 
-  Future<PaginatedResponse<Character>> getCharacters({required int page}) async {
+  Future<PaginatedResponse<Character>> getCharacters({required int page, String? name}) async {
     final int offset = PaginatedResponse.getOffset(page: page, pageSize: pageSize);
     final Response<Map<String, dynamic>> response = await dio.get(
       _charactersPath,
-      queryParameters: {"limit": pageSize, "offset": offset, "field_list": _fieldList},
+      queryParameters: {
+        "limit": pageSize,
+        "offset": offset,
+        "field_list": _fieldList,
+        if (name != null) "filter": "$_nameFilterPrefix$name",
+      },
     );
     final CharactersResponse characters = CharactersResponse.fromJson(response.data!);
     return PaginatedResponse<Character>(

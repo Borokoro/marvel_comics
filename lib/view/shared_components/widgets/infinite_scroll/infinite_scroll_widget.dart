@@ -26,6 +26,7 @@ class InfiniteScrollWidget extends StatelessWidget {
     return ListView.separated(
       padding: padding,
       physics: const AlwaysScrollableScrollPhysics(),
+      keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
       itemCount: items.length + (hasReachedEnd ? 0 : 1),
       separatorBuilder: (_, _) => SizedBox(height: itemSpacing),
       itemBuilder: (BuildContext context, int index) {

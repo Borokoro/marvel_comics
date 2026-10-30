@@ -4,7 +4,7 @@ import 'package:super_heroes/constants/style_constants.dart';
 import 'package:super_heroes/cubits/characters/characters_cubit.dart';
 import 'package:super_heroes/l10n/app_localizations.dart';
 import 'package:super_heroes/types/models/character.dart';
-import 'package:super_heroes/view/pages/home/components/character_card.dart';
+import 'package:super_heroes/view/shared_components/widgets/character_card.dart';
 import 'package:super_heroes/view/shared_components/widgets/error_body.dart';
 import 'package:super_heroes/view/shared_components/widgets/infinite_scroll/infinite_scroll_refresh_widget.dart';
 import 'package:super_heroes/view/shared_components/widgets/info_body.dart';

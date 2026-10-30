@@ -10,4 +10,8 @@ abstract class ColorConstants {
   static const Color textBrand = Color(0xFFF33335);
   static const Color iconActive = Color(0xFFF33335);
   static const Color iconInactive = Color(0xFFD1D7DD);
+  static const Color iconSecondary = Color(0xFF757575);
+  static const Color iconPlaceholder = Color(0xFFE1E1E1);
+  static const Color shadow = Color(0x14000000);
+  static const Color transparent = Color(0x00000000);
 }
