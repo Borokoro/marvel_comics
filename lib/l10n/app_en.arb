@@ -14,5 +14,10 @@
   "charactersLoadingError": "Couldn't load the heroes",
   "charactersEmpty": "No heroes found",
   "retry": "Try again",
-  "loadMoreRetry": "Load more"
+  "loadMoreRetry": "Load more",
+  "searchHint": "Search for a super hero",
+  "cancel": "Cancel",
+  "searchStartTyping": "Start typing to find a particular super hero.",
+  "searchNoResults": "There is no super hero with that name in our library. Check the spelling and try again.",
+  "searchError": "Couldn't search for heroes"
 }

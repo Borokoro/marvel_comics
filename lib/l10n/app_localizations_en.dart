@@ -34,4 +34,21 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get loadMoreRetry => 'Load more';
+
+  @override
+  String get searchHint => 'Search for a super hero';
+
+  @override
+  String get cancel => 'Cancel';
+
+  @override
+  String get searchStartTyping =>
+      'Start typing to find a particular super hero.';
+
+  @override
+  String get searchNoResults =>
+      'There is no super hero with that name in our library. Check the spelling and try again.';
+
+  @override
+  String get searchError => 'Couldn\'t search for heroes';
 }

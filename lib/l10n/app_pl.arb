@@ -7,5 +7,10 @@
   "charactersLoadingError": "Nie udało się wczytać bohaterów",
   "charactersEmpty": "Nie znaleziono bohaterów",
   "retry": "Spróbuj ponownie",
-  "loadMoreRetry": "Wczytaj więcej"
+  "loadMoreRetry": "Wczytaj więcej",
+  "searchHint": "Szukaj superbohatera",
+  "cancel": "Anuluj",
+  "searchStartTyping": "Zacznij pisać, aby znaleźć konkretnego superbohatera.",
+  "searchNoResults": "W naszej bibliotece nie ma superbohatera o takiej nazwie. Sprawdź pisownię i spróbuj ponownie.",
+  "searchError": "Nie udało się wyszukać bohaterów"
 }

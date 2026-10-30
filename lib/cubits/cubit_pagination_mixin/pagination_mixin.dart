@@ -18,7 +18,7 @@ mixin PaginationMixin<V, S, P extends PaginatedStateInfinityScroll<V>> on BlocBa
     try {
       final PaginatedResponse<V> response = await fetch(currentState.items.length ~/ pageSize + PaginatedResponse.firstPage);
       final S latestState = state;
-      if (isClosed || latestState is! P) return;
+      if (isClosed || latestState is! P || !latestState.isLoadingMore) return;
       emit(latestState.copyWith(
         items: _mergeItems(latestState.items, response.data),
         nextPage: () => response.nextPage,
@@ -27,7 +27,7 @@ mixin PaginationMixin<V, S, P extends PaginatedStateInfinityScroll<V>> on BlocBa
       ) as S);
     } catch (_) {
       final S latestState = state;
-      if (isClosed || latestState is! P) return;
+      if (isClosed || latestState is! P || !latestState.isLoadingMore) return;
       emit(latestState.copyWith(isLoadingMore: false, hasLoadMoreError: true) as S);
     }
   }

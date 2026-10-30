@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:super_heroes/constants/color_constants.dart';
 
 abstract class StyleConstants {
   static const EdgeInsets edgeInsets16 = EdgeInsets.all(16);
@@ -7,5 +8,5 @@ abstract class StyleConstants {
 
   static const BorderRadius radius8 = BorderRadius.all(Radius.circular(8));
 
-  static const List<BoxShadow> cardShadow = [BoxShadow(color: Color(0x14000000), blurRadius: 16, offset: Offset(0, 4))];
+  static const List<BoxShadow> cardShadow = [BoxShadow(color: ColorConstants.shadow, blurRadius: 16, offset: Offset(0, 4))];
 }
